@@ -58,18 +58,15 @@ Before starting ensure that you have *mysql* on your machine.
 Make sure to install the dependecies 
 ```bash
 pip install AIML
-pip install bs4
+pip install beautifulsoup4
 pip install urllib2
 ```
-make sure to update the python time library, there is a common issue while using 
-```bash
-time.clock()
-```
-with the AIML library
+make sure to update the python time library, there is a common issue while using with the AIML library
 FIX Available here: [https://stackoverflow.com/questions/58569361/attributeerror-module-time-has-no-attribute-clock-in-python-3-8](url)
 
 
 The backend server has to be run first on port 8000.
+
 The backend server can be run simply via 
 ```bash
 $ python app.py 
