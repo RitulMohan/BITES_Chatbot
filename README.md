@@ -1,4 +1,4 @@
-# AIML_Chatbot
+# BITES_Chatbot
 
 
 # Table of Contents
