@@ -1,1 +1,236 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0.1">
 
+<category>
+<pattern>Hello *</pattern>
+<template> 
+        <random>
+            <li> Hello! </li>
+            <li> Hi! Nice to meet you! </li>
+            <li> Hi,such a long time! </li>
+        </random>
+</template>
+</category>
+
+<category>
+<pattern>WHO ARE YOU</pattern>
+<template> I am a BiteBOT, silly! </template>
+</category>
+
+<category>
+<pattern>Hello</pattern>
+<template>
+        <random>
+            <li> Hello! </li>
+            <li> Hi! Nice to meet you! </li>
+            <li> Hi,such a long time! </li>
+        </random>
+</template>
+</category>
+
+<category>
+<pattern>THANK YOU</pattern>
+<template>
+    <random>
+    <li> Anytime for you! </li>
+    <li> Don't thank me!Thank the team behind this.Long live my developers! </li>
+    <li> The pleasure is mine. </li>
+    </random>
+</template>
+</category>
+
+<category>
+<pattern>THANKS</pattern>
+<template>
+    <random>
+    <li> Anytime for you! </li>
+    <li> Don't thank me!Thank the team behind this.Long live the developers! </li>
+    <li> The pleasure is mine. </li>
+    </random>
+</template>
+</category>
+
+<category>
+<pattern>Hi I am * </pattern>
+<template>
+  <think><set name="username"><star /></set></think>
+  Hello,How are you?
+</template>
+</category>
+
+<category>
+<pattern>i am fine</pattern>
+<that>HELLO HOW ARE YOU</that>
+<template>That's so great to hear.</template>
+</category>
+
+<category>
+<pattern>i am not fine</pattern>
+<that>HELLO HOW ARE YOU</that>
+<template>Take some rest, You've got this!</template>
+</category>
+
+
+
+<category>
+<pattern>My name is *</pattern>
+<template>
+         Hello <set name = "username"> <star/>! </set>
+</template>  
+</category>  
+   
+<category>
+<pattern>Bye</pattern>
+<template>Bye <get name = "username"/> Thanks for the chat! Take care! </template>
+</category>
+
+   
+<category>
+<pattern> GoodBye</pattern>
+<template>Bye <get name = "username"/> Thanks for the conversation!</template>
+</category>
+
+<category>
+<pattern>Can you help * food * outlets</pattern>
+<template>Sure,what would you like to have? Maggi, Chinese, Biryani, Dosa ?</template>
+</category>
+
+
+<category>
+<pattern>MAGGI</pattern>
+<that>SURE What WOULD YOU LIKE TO HAVE MAGGI CHINESE BIRYANI DOSA</that>
+<template>Yummy ! You can find Maggi at these outlets: Yumpys, Hotspot</template>
+</category>
+
+
+<category>
+<pattern>CHINESE</pattern>
+<that>SURE What WOULD YOU LIKE TO HAVE MAGGI CHINESE BIRYANI DOSA</that>
+<template>YumYum ! You can find Chinese at these outlets: Yumpys, VijayVahini Foods</template>
+</category>
+
+<category>
+<pattern>BIRYANI</pattern>
+<that>SURE What WOULD YOU LIKE TO HAVE MAGGI CHINESE BIRYANI DOSA</that>
+<template> Great choice ! You can find Biryani at these outlets: Yumpys, VijayVahini Foods</template>
+</category>
+
+<category>
+<pattern>DOSA</pattern>
+<that>SURE What WOULD YOU LIKE TO HAVE MAGGI CHINESE BIRYANI DOSA</that>
+<template> You can find Dosa at Chipotle</template>
+</category>
+
+
+<category>
+<pattern>None</pattern>
+<that>SURE What WOULD YOU LIKE TO HAVE MAGGI CHINESE BIRYANI DOSA</that>
+<template>Are you sure you are not interested in any domain?</template>
+</category>
+
+<category>
+<pattern>None</pattern>
+<that> SURE What WOULD YOU LIKE TO HAVE MAGGI CHINESE BIRYANI DOSA</that>
+<template>Are you sure you are not hunrgy?</template>
+</category>
+
+<category>
+<pattern>Yes</pattern>
+<that> ARE YOU SURE YOU ARE NOT INTERESTED IN ANY </that>
+<template>But you wanted to know about places to eat in BITS Hyderabad?</template>
+</category>
+
+
+<category>
+<pattern>What is the weather today</pattern>
+<template>Weather for which city?</template>
+</category>
+
+<category>
+<pattern>Hyderabad</pattern>
+<that>WEATHER FOR WHICH CITY</that>
+<template>http://api.openweathermap.org/data/2.5/weather?appid=0c42f7f6b53b244c78a418f4f181282aHyderabad</template>
+</category>
+
+<category>
+<pattern>Mumbai</pattern>
+<that>WEATHER FOR WHICH CITY</that>
+<template>http://api.openweathermap.org/data/2.5/weather?appid=0c42f7f6b53b244c78a418f4f181282aMumbai</template>
+</category>
+
+<category>
+<pattern>Delhi</pattern>
+<that>WEATHER FOR WHICH CITY</that>
+<template>http://api.openweathermap.org/data/2.5/weather?appid=0c42f7f6b53b244c78a418f4f181282aDelhi</template>
+</category>
+
+<category>
+<pattern>what are healthy foods *</pattern>
+<template>call top food in url.py</template>
+</category>
+
+
+<category>
+<pattern> A * is a * </pattern>   
+<template>When a <star index = "1"/> is not a <star index = "2"/>?</template>
+</category>
+
+<category>
+<pattern>I LIKE COFFEE</pattern>
+<template>Do you take cream or sugar in your coffee?</template>
+</category>
+
+<category>
+<pattern>YES</pattern>
+<that>DO YOU TAKE CREAM OR SUGAR IN YOUR COFFEE</that>
+<template>I do too.</template>
+</category>
+
+<category>
+<pattern>NO</pattern>
+<that>DO YOU TAKE CREAM OR SUGAR IN YOUR COFFEE</that>
+<template>Really? I have a hard time drinking black coffee.</template>
+</category>
+
+<category>
+<pattern>WHAT ABOUT MOVIES</pattern>
+<template>Do you like comedy movies?</template>  
+</category>
+   
+<category>
+<pattern>YES</pattern>
+<that>DO YOU LIKE COMEDY MOVIES</that>
+<template>Nice I like comedy movies too</template>
+</category>
+   
+<category>
+<pattern>NO</pattern>
+<that>DO YOU LIKE COMEDY MOVIES</that>
+<template>Ok! But I like comedy movies.You should watch them as well</template>
+</category>
+
+<category>
+<pattern>I Love *</pattern>
+<template>I too like <star />.</template>
+</category>
+
+
+<category>
+<pattern>SCHOOL</pattern>
+<template>School is an important institution in a child's life.</template>
+</category>  
+   
+   
+<category>
+<pattern>* SCHOOL</pattern>
+<template> <srai>SCHOOL</srai></template>
+</category>
+     
+<category>
+<pattern>SCHOOL *</pattern>
+<template><srai>SCHOOL</srai></template>
+</category>
+   
+   
+
+</aiml>
