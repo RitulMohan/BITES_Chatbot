@@ -79,7 +79,8 @@ $ python app.py
 The front end Android part can be run in *Android Studio*.
 - Set up *Android Studio*,and install an emulator for testing/running the app.
 - Open the *MyApplication* folder in Android Studio.
-- Press the Play button to run the app. 
-- This code was run on **Pixel 3A** device.
+- Press the Play button to run the app.
+- update gradle configuration to update build 
+- This code was run on a virtual **Pixel 3A** device.
 
 
