@@ -1,4 +1,5 @@
 # BITES_Chatbot
+_Keyword-based chatbot with AIML core, random responses, conversation storage, web scraping, weather API integration._
 
 
 # Table of Contents
