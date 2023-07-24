@@ -73,8 +73,6 @@ The backend server can be run simply via
 $ python app.py 
 ```
 (*Python v3.9 was used for development*)
-<img width="863" alt="Pasted Graphic 1" src="https://github.com/RitulMohan/AIML_Chatbot/assets/79750424/d61681c4-4e43-4578-b351-7bec9b4babc5">
-
 
 The front end Android part can be run in *Android Studio*.
 - Set up *Android Studio*,and install an emulator for testing/running the app.
