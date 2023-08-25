@@ -7,9 +7,7 @@ _Keyword-based chatbot with AIML core, random responses, conversation storage, w
   * [Summary](#summary)
   * [Architecture](#architecture)
   * [Setup](#setup)
-  * [Authors](#authors)
-  * [References](#references)
-  * [Contribution](#contribution)
+
 
 ## Demo
 ![Application demo](media/demo.gif)
